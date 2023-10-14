@@ -1,1 +1,71 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: #008000;
+}
+
+.container-fluid {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 4em;
+  background-color: white;
+  color: black;
+  position: relative; /* Added */
+}
+
+.top {
+  position: absolute; /* Added */
+  top: 0; /* Added */
+  left: 0; /* Added */
+}
+
+.middle {
+  position: absolute; /* Added */
+  top: 50%; /* Added */
+  left: 50%; /* Added */
+  transform: translate(-50%, -50%); /* Added */
+}
+
+.bottom {
+  position: absolute; /* Added */
+  bottom: 0; /* Added */
+  right: 0; /* Added */
+  -ms-transform: scale(1, -1) !important;
+  transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+}
+
+.heart {
+  color: red;
+}
+
+.diamond {
+  color: red;
+}
+
+.spade {
+  color: black;
+}
+
+.club {
+  color: black;
+}
