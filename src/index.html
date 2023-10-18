@@ -21,9 +21,15 @@
         <div class="middle"></div>
         <div class="bottom"></div>
       </div>
-      <button id="newCard" class="btn btn-primary mt-4">
-        Generate new card
-      </button>
+      <input type="number" id="cardWidth" placeholder="Card Width (150-400)" />
+      <input
+        type="number"
+        id="cardHeight"
+        placeholder="Card Height (150-400)"
+      />
+      <div id="error" style="color: red;"></div>
+      <button id="newCard">Generate New Card</button>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
